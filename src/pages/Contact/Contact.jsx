@@ -3,6 +3,6 @@ import styles from "./Contact.module.css";
 
 export default () => {
   return (
-    <div>Contact</div>
+    <div className={styles.Contact}>Contact</div>
   );
 }

@@ -3,6 +3,6 @@ import styles from "./Products.module.css";
 
 export default () => {
   return (
-    <div>Products</div>
+    <div className={styles.Products}>Products</div>
   );
 }

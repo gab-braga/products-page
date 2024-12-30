@@ -1,0 +1,28 @@
+.Header {
+    margin-bottom: 2rem;
+}
+
+.Header ul {
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+.Header ul li {
+    margin-right: 1rem;
+}
+
+.link {
+    display: block;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+    background: #eeeeee;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+:global(.active).link {
+    background: #dddddd;
+}

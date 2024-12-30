@@ -3,6 +3,6 @@ import styles from "./NotFound.module.css";
 
 export default () => {
   return (
-    <div>Not Found</div>
+    <div className={styles.NotFound}>Not Found</div>
   );
 }

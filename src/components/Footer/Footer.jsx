@@ -3,7 +3,7 @@ import styles from "./Footer.module.css";
 
 export default () => {
     return (
-        <div>
+        <div className={styles.Footer}>
             Footer
         </div>
     );
