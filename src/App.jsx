@@ -5,6 +5,7 @@ import Footer from "./components/Footer/Footer";
 import Contact from "./pages/Contact/Contact";
 import NotFound from "./pages/NotFound/NotFound";
 import Product from "./pages/Product/Product";
+import "./App.css";
 
 function App() {
   return (

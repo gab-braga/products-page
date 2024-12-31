@@ -5,7 +5,7 @@ import Head from '../../components/Head/Head';
 
 export default () => {
   return (
-    <section className={styles.Contact + " animeLeft"}>
+    <section className={[styles.Contact, "animeLeft"].join(" ")}>
       <Head title="Produtos | Contato" description="Página de Contato" />
       
       <img src={photo} alt="Máquina de Escrever" />

@@ -1,0 +1,14 @@
+.Loading {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 10px solid #ccc;
+    border-right-color: transparent;
+    animation: loading 1s infinite linear;
+}
+
+@keyframes loading {
+    to {
+        transform: rotate(360deg);
+    }
+}

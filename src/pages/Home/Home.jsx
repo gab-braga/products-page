@@ -2,6 +2,7 @@ import React from 'react';
 import styles from "./Home.module.css";
 import Head from '../../components/Head/Head';
 import { Link } from 'react-router-dom';
+import Loading from '../../components/Loading/Loading';
 
 export default () => {
   const [products, setProducts ] = React.useState(null);
@@ -17,10 +18,10 @@ export default () => {
     loadData()
   }, []);
 
-  if (!products) return <p>Carregando...</p>;
+  if (!products) return <Loading />;
 
   return (
-    <section className={styles.Home + " animeLeft"}>
+    <section className={[styles.Home, "animeLeft"].join(" ")}>
       <Head title="Produtos | Home" description="Página Principal" />
       
       {products.map(product => (

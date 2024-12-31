@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Product.module.css";
 import { useParams } from "react-router-dom";
 import Head from "../../components/Head/Head";
+import Loading from "../../components/Loading/Loading";
 
 export default () => {
   const { id } = useParams();
@@ -18,15 +19,18 @@ export default () => {
     loadData();
   }, []);
 
-  if (!product) return <p>Carregando...</p>;
+  if (!product) return <Loading />;
 
   return (
-    <section className={styles.Product + " animeLeft"}>
+    <section className={[styles.Product, "animeLeft"].join(" ")}>
       <Head title={`Produtos | ${product.nome}`} description={product.nome} />
-      
-      {product.fotos.map(photo => (
+
+      <div>
+        {product.fotos.map((photo) => (
           <img key={photo.src} src={photo.src} alt={photo.titulo} />
-      ))}
+        ))}
+      </div>
+
       <div>
         <h1>{product.nome}</h1>
         <span className={styles.price}>R$ {product.preco}</span>
