@@ -7,6 +7,7 @@ export default () => {
   return (
     <section className={styles.Contact + " animeLeft"}>
       <Head title="Produtos | Contato" description="Página de Contato" />
+      
       <img src={photo} alt="Máquina de Escrever" />
       <div>
         <h1>Entre em contato</h1>
